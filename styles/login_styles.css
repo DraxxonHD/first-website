@@ -6,7 +6,7 @@ html, body {
 
 div.fillheight
 {
-    height: 50vw;
+    height: calc(10vw + 100vh);
 }
 
 .box > form > fieldset
@@ -22,20 +22,21 @@ fieldset > *
 form, .box
 {
     backdrop-filter: blur(20px);
-    width: 20vw;
+    width: calc(10vw + 30vh);
 }
 
-#username, #password, #login, #email, a
+#username, #password, #login, #email, #passwordrepeat, a
 {
     margin: 0 0 5% 0;
     width: 100%;
-    font-size: 1.5vw;
+    font-size: calc(1vw + 1vh);
 }
 
 label
 {
     color: white;
-    font-size: 3vw;
+    font-size: calc(1vw + 2vh);
+    text-align: center;
 }
 
 .background
