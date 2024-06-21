@@ -1,9 +1,20 @@
 
 - Idee -> Movie Reviews
-- Referenzen gesucht -> then Wireframe
-- Umsetzung vom Wireframe für Homepage
-- Erste Umsetzung vom Homepage:
-  - Navbar, asid, main, footer --> grid style
-  - Grundstruktur ist da, aber content muss noch rein, um die richtigen Verhältnisse herzustellen
-- erste Umsetzung von Login, Register, Forgot Password Webseiten --> strukturell identisch
+Unsere Webseiten: Homepage, Top-Filme, Login, Entdecken, Watchlist
 
+Homepage:
+  - Referenzen gesucht -> then Wireframe
+  - Umsetzung vom Wireframe für Homepage
+  - Erste Umsetzung vom Homepage:
+    - Navbar, asid, main, footer --> grid style
+    - Grundstruktur ist da, aber content muss noch rein, um die richtigen Verhältnisse herzustellen
+  -
+
+Login:
+  - erste Umsetzung von Login, Register, Forgot Password Webseiten --> strukturell identisch
+
+Top-Filme:
+  - Idee: soll die aktuell beliebtesten Filme anzeigen
+
+Entdecken:
+  - Idee: soll die neusten Filme anzeigen
