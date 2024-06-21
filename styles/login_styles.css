@@ -1,0 +1,48 @@
+html, body {
+    margin: 0;
+    height: 100%;
+    background: #888888
+}
+
+div.fillheight
+{
+    height: 50vw;
+}
+
+.box > form > fieldset
+{
+    height: auto;
+}
+
+fieldset > *
+{
+    margin: 5px 5px 5px 5px;
+}
+
+form, .box
+{
+    backdrop-filter: blur(20px);
+    width: 20vw;
+}
+
+#username, #password, #login, #email, a
+{
+    margin: 0 0 5% 0;
+    width: 100%;
+    font-size: 1.5vw;
+}
+
+label
+{
+    color: white;
+    font-size: 3vw;
+}
+
+.background
+{
+    background-image: url("/imgs/avenger_endgame.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
