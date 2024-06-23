@@ -1,0 +1,216 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(  6, 1fr);
+    grid-template-rows:    repeat(19, 1fr);
+    grid-template-areas: 
+    "navbar navbar navbar navbar navbar navbar"
+
+    "slider slider slider slider slider slider"
+    "slider slider slider slider slider slider"
+    "slider slider slider slider slider slider"
+    "slider slider slider slider slider slider"
+    "slider slider slider slider slider slider"
+
+    "row-1-card-1 row-1-card-2 row-1-card-3 row-1-card-4 row-1-card-5 row-1-card-6"
+    "row-1-card-1 row-1-card-2 row-1-card-3 row-1-card-4 row-1-card-5 row-1-card-6"
+    "row-1-card-1 row-1-card-2 row-1-card-3 row-1-card-4 row-1-card-5 row-1-card-6"
+    "row-1-card-1 row-1-card-2 row-1-card-3 row-1-card-4 row-1-card-5 row-1-card-6"
+
+    "row-2-card-1 row-2-card-1 row-2-card-2 row-2-card-2 row-2-card-3 row-2-card-3"
+    "row-2-card-1 row-2-card-1 row-2-card-2 row-2-card-2 row-2-card-3 row-2-card-3"
+
+    "row-2-card-4 row-2-card-4 row-2-card-5 row-2-card-5 row-2-card-6 row-2-card-6"
+    "row-2-card-4 row-2-card-4 row-2-card-5 row-2-card-5 row-2-card-6 row-2-card-6"
+
+    "row-3-card-1 row-3-card-2 row-3-card-3 row-3-card-4 row-3-card-5 row-3-card-6"
+    "row-3-card-1 row-3-card-2 row-3-card-3 row-3-card-4 row-3-card-5 row-3-card-6"
+    "row-3-card-1 row-3-card-2 row-3-card-3 row-3-card-4 row-3-card-5 row-3-card-6"
+    "row-3-card-1 row-3-card-2 row-3-card-3 row-3-card-4 row-3-card-5 row-3-card-6"
+
+    "txt-description-xl txt-description-xl txt-description-xl txt-description-xl txt-description-xl txt-description-xl"
+
+    "txt-description-l txt-description-l txt-description-l txt-description-l txt-description-l txt-description-l"
+
+    "footer footer footer footer footer footer";
+    gap: 1rem;
+    height: 250vh;
+    
+}
+
+.grid-item-navbar {
+    grid-area: navbar;
+    background-color: var(--main-brand-color);
+}
+
+.grid-item-slider {
+    grid-area: slider;
+    background-color: var(--primary-color);
+}
+
+.row-1-card-1 {
+    grid-area: row-1-card-1;
+    background-color: var(--secondary-color);
+}
+
+.row-1-card-2 {
+    grid-area: row-1-card-2;
+    background-color: var(--secondary-color);
+}
+
+.row-1-card-3 {
+    grid-area: row-1-card-3;
+    background-color: var(--secondary-color);
+}
+
+.row-1-card-4 {
+    grid-area: row-1-card-4;
+    background-color: var(--secondary-color);
+}
+
+.row-1-card-5 {
+    grid-area: row-1-card-5;
+    background-color: var(--secondary-color);
+}
+.row-1-card-6 {
+    grid-area: row-1-card-6;
+    background-color: var(--secondary-color);
+}
+.row-2-card-1 {
+    grid-area: row-2-card-1;
+    background-color: var(--secondary-color);
+}
+
+.row-2-card-2 {
+    grid-area: row-2-card-2;
+    background-color: var(--secondary-color);
+}
+
+.row-2-card-3 {
+    grid-area: row-2-card-3;
+    background-color: var(--secondary-color);
+}
+
+.row-2-card-4 {
+    grid-area: row-2-card-4;
+    background-color: var(--secondary-color);
+}
+
+.row-2-card-5 {
+    grid-area: row-2-card-5;
+    background-color: var(--secondary-color);
+}
+.row-2-card-6 {
+    grid-area: row-2-card-6;
+    background-color: var(--secondary-color);
+}
+
+.row-3-card-1 {
+    grid-area: row-3-card-1;
+    background-color: var(--secondary-color);
+}
+
+.row-3-card-2 {
+    grid-area: row-3-card-2;
+    background-color: var(--secondary-color);
+}
+
+.row-3-card-3 {
+    grid-area: row-3-card-3;
+    background-color: var(--secondary-color);
+}
+
+.row-3-card-4 {
+    grid-area: row-3-card-4;
+    background-color: var(--secondary-color);
+}
+
+.row-3-card-5 {
+    grid-area: row-3-card-5;
+    background-color: var(--secondary-color);
+}
+.row-3-card-6 {
+    grid-area: row-3-card-6;
+    background-color: var(--secondary-color);
+}
+
+.txt-description-xl{
+    grid-area: txt-description-xl;
+    background-color: var(--txt-color);
+}
+.txt-description-l{
+    grid-area: txt-description-l;
+    background-color: var(--txt-color);
+}
+.footer{
+    grid-area: footer;
+}
+
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr); 
+        grid-template-rows: repeat(44, 1fr); 
+        grid-template-areas: 
+            "navbar navbar"
+
+            "slider slider"
+            "slider slider"
+            "slider slider"
+            "slider slider"
+            "slider slider"
+
+            "row-1-card-1 row-1-card-2"
+            "row-1-card-1 row-1-card-2"
+            "row-1-card-1 row-1-card-2"
+            "row-1-card-1 row-1-card-2"
+
+            "row-1-card-3 row-1-card-4"
+            "row-1-card-3 row-1-card-4"
+            "row-1-card-3 row-1-card-4"
+            "row-1-card-3 row-1-card-4"
+
+
+            "row-1-card-5 row-1-card-6"
+            "row-1-card-5 row-1-card-6"
+            "row-1-card-5 row-1-card-6"
+            "row-1-card-5 row-1-card-6"
+
+            "row-2-card-1 row-2-card-1"
+            "row-2-card-1 row-2-card-1"
+
+            "row-2-card-2 row-2-card-2"
+            "row-2-card-2 row-2-card-2"
+
+            "row-2-card-3 row-2-card-3"
+            "row-2-card-3 row-2-card-3"
+
+            "row-2-card-4 row-2-card-4"
+            "row-2-card-4 row-2-card-4"
+
+            "row-2-card-5 row-2-card-5"
+            "row-2-card-5 row-2-card-5"
+
+            "row-2-card-6 row-2-card-6"
+            "row-2-card-6 row-2-card-6"
+
+            "row-3-card-1 row-3-card-2"
+            "row-3-card-1 row-3-card-2"
+            "row-3-card-1 row-3-card-2"
+            "row-3-card-1 row-3-card-2"
+
+            "row-3-card-3 row-3-card-4"
+            "row-3-card-3 row-3-card-4"
+            "row-3-card-3 row-3-card-4"
+            "row-3-card-3 row-3-card-4"
+
+
+            "row-3-card-5 row-3-card-6"
+            "row-3-card-5 row-3-card-6"
+            "row-3-card-5 row-3-card-6"
+            "row-3-card-5 row-3-card-6"
+
+            "txt-description-xl txt-description-xl"
+            "txt-description-l  txt-description-l"
+            "footer footer";
+        height: 250vh; 
+    }
+}
