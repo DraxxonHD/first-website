@@ -1,0 +1,83 @@
+
+
+
+.header {
+  position: fixed; /* Die Kopfzeile wird fixiert, damit sie beim Scrollen an der oberen Position bleibt */
+  top: 0;  /* Setzt die Kopfzeile oben am Viewport */
+  left: 0;  /* Setzt die Kopfzeile am linken Rand des Viewports */
+  width: 100%; /* Die Kopfzeile nimmt die gesamte Breite des Viewports ein */
+  padding: 20px 7px; /* Setzt den Innenabstand der Kopfzeile auf 20 Pixel oben/unten und 50 Pixel links/rechts */
+  background-color: transparent; /* Setzt die Hintergrundfarbe der Kopfzeile auf transparent */
+  display: flex; /* Verwendet Flexbox, um die Positionierung der Elemente in der Kopfzeile zu steuern */
+  justify-content: space-between; /* Platziert die Elemente in der Kopfzeile gleichmäßig entlang der horizontalen Achse, wobei der verfügbare Platz zwischen ihnen verteilt wird */
+  align-items: center; /* Zentriert die Elemente in der Kopfzeile entlang der vertikalen Achse */
+  z-index: 100; /* Setzt die Stapeltiefe der Kopfzeile, um sicherzustellen, dass sie über anderen Inhalten liegt */
+}
+
+.logo {
+font-size: 32px; /* Setzt die Schriftgröße des Logos auf 32 Pixel */
+color: #fff; /* Setzt die Textfarbe des Logos auf Weiß */
+text-decoration: none; /* Entfernt jegliche Textdekoration, wie z.B. Unterstreichungen, vom Logo */
+font-weight: 700; /**/ /* Setzt die Schriftgewichtung des Logos auf 700 (fett) */
+}
+.navbar{
+  display: flex;
+  flex-wrap: wrap;
+  z-index: 100;
+}
+
+
+.navbar a {
+position: relative;  /* Setzt die Position der Links im Navbar relativ, sodass sie relativ zu ihrem normalen Fluss positioniert werden können */
+font-size: 18px; /* Setzt die Schriftgröße der Links auf 18 Pixel */
+color: #fff; /* Setzt die Textfarbe der Links auf Weiß */
+font-weight: 500; /* Setzt das Schriftgewicht der Links auf 500 (mittel) */
+text-decoration: none; /* Entfernt jegliche Textdekoration von den Links */
+margin-left: 40px; /* Setzt den linken Außenabstand der Links auf 40 Pixel, um sie voneinander zu trennen */
+padding-bottom: 5px;
+display: block;
+flex: 0 0 auto; /* Flexibles Verhalten: gleichmäßige Verteilung der Breite */
+margin-bottom: 10px; /* Optional: Abstand zwischen den Links */
+margin-right: 20px;
+white-space: nowrap;
+}
+
+.navbar a::before {
+content: ''; /* Fügt keinen sichtbaren Inhalt vor den Links hinzu */
+position: absolute; /* Setzt die Position des Pseudo-Elements absolut, um es relativ zum übergeordneten Element zu positionieren */
+top: 100%; /* Platziert das Pseudo-Element direkt unter dem Link */
+bottom: 0;
+left: 0; /* Setzt die linke Position des Pseudo-Elements auf den linken Rand des Links */
+width: 0; /* Setzt die Breite des Pseudo-Elements auf 0, um es unsichtbar zu machen */
+height: 2px;  /* Setzt die Höhe des Pseudo-Elements auf 2 Pixel, um die Unterstreichung darzustellen */
+background: #fff;  /* Setzt die Hintergrundfarbe des Pseudo-Elements auf Weiß */
+transition: width 0.3s ease; /* Fügt eine Übergangsanimation mit einer Dauer von 0,3 Sekunden hinzu */
+}
+
+
+.navbar a:hover::before {
+width: 100%; /* Ändert die Breite des Pseudo-Elements auf 100% beim Hovern über den Link */
+}
+
+@media (max-width: 768px) {
+  .grid-container {
+      grid-template-columns: 1fr; /* Eine Spalte für kleinere Bildschirme */
+  }
+
+  .navbar {
+      flex-direction: column; /* Links werden gestapelt */
+  }
+
+  .navbar a {
+      margin-bottom: 10px; /* Abstand zwischen gestapelten Links */
+  }
+}
+@media (max-width: 768px) {
+  .navbar a {
+    margin-bottom: 10px; /* Abstand zwischen gestapelten Links */
+  }
+
+  .navbar a:last-child {
+    margin-bottom: 0; /* Kein Abstand für den letzten Link */
+  }
+}
