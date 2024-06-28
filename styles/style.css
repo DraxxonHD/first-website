@@ -108,8 +108,24 @@ justify-content: space-between;
 .mainbox
 {
   width: 300px;
+  height: 100px;
 }
 
+.mainbox > div
+{
+  background-color: #888888;
+  height: 100%;
+
+}
+
+.mainbox > div > p
+{
+  margin: 0;
+  text-align: center;
+  text-wrap: wrap;
+  font-size: calc(1vw + 2vh);
+  overflow-wrap: break-word;
+}
 
 .asidebox
 {
@@ -124,7 +140,7 @@ justify-content: space-between;
 .boxbig
 {
   width: 90%;
-  height: 400px;
+  height: calc(10vw + 20vh);
 }
 
 .login
@@ -146,6 +162,7 @@ a:hover { text-decoration: none; color:blue; }
 a:focus { text-decoration: none; color:yellow; }
 /* a:hover, a:active { text-decoration: none; color:black } */
 
+/* rating system */
 input[name="star"] {
   display: none;
 }
@@ -163,9 +180,112 @@ input:checked ~ label {
   float: right;
 }
 
+
 .imginbox
 {
   object-fit: cover;
   width: 100%;
   height: 100%;
+}
+
+
+
+/* SHOW SELECTED SLIDE ONLY */
+.slides input[type="radio"]
+{
+  display: none;
+}
+.slides > div {
+  height: 100%;
+  margin: 0;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.5s;
+}
+.slides input[type="radio"]:checked + div{
+  visibility: visible;
+  opacity: 1;
+}
+
+/* SLIDES WRAPPER & SHARED */
+.slides, .slides > div{
+  position: relative;
+  height: inherit;
+  width: 100%;
+}
+.slides > div ,.slides p, .slides label {
+  position: absolute;
+}
+.slides  label, .slides p {
+  color: #fff;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+/* SLIDE IMAGES */
+.slides > div img {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* SLIDE CAPTION */
+.slides p {
+  margin: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 4vw;
+}
+
+/* LAST & NEXT BUTTONS */
+.slides label {
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  font-size: 1.5em;
+  cursor: pointer;
+}
+.slides label.last { left: 10px; }
+.slides label.next { right: 10px; }
+
+div.slidecontent > div > img
+{
+  backdrop-filter: blur(20px);
+  height: 100%;
+  width: 100%;
+}
+
+div.slidecontent > div
+{
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/* background of first slide */
+#slide1 + div > div
+{
+  background-image: url("../imgs/movies/allesstehtkopf1/allesstehtkopf1banner.jpg");
+  img {content: url("../imgs/movies/allesstehtkopf1/banner.jpg");}
+}
+/* background of second slide */
+#slide2 + div > div
+{
+  background-image: url("../imgs/movies/allesstehtkopf2/allesstehtkopf2banner.jpg");
+  img {content: url("../imgs/movies/allesstehtkopf2/banner.jpg");}
+}
+/* background of third slide */
+#slide3 + div > div
+{
+  background-image: url("../imgs/movies/barbie/bg.jpg");
+  img {content: url("../imgs/movies/barbie/banner.jpg");}
 }

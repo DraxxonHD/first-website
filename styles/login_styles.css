@@ -41,7 +41,7 @@ label
 
 .background
 {
-    background-image: url("/imgs/avenger_endgame.jpg");
+    background-image: url("../imgs/avenger_endgame.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
