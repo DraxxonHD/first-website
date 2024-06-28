@@ -8,14 +8,47 @@ Homepage:
   - Erste Umsetzung vom Homepage:
     - Navbar, asid, main, footer --> grid style
     - Grundstruktur ist da, aber content muss noch rein, um die richtigen Verhältnisse herzustellen
-  -
+  - Gewöhnlich hatten die meisten Webseiten ein Carousel groß als Highlight zu sehen, weswegen wir auch eins versucht haben
 
 Login:
   - erste Umsetzung von Login, Register, Forgot Password Webseiten --> strukturell identisch
-  - Login und weiteres sollen simple und direkt sein
 
 Top-Filme:
   - Idee: soll die aktuell beliebtesten Filme anzeigen
 
 Entdecken:
   - Idee: soll die neusten Filme anzeigen
+
+------------------------------------------------------
+Aufteilung des Teams: Contributor und DraxxonHD zusammen, Contributor allein
+Aufteilung der Webseiten:
+  Contributor&DraxxonHD: Homepage, Entdecken, Login (+Password vergessen, +Registrieren), Filmseite, Profil
+  Möser: Top-Filme, Watchlist, Impressum
+
+Webseiten (einzigartiger Layout): Homepage, Entdecken, Top-Filme, Watchlist, Filmseite, Login, Profil, Impressum
+
+Struktur:
+  • Homepage
+    	• Filmseite
+    	• Entdecken
+    		• Filmseite
+    	• Top-Filme
+    		• Filmseite
+    	• Watchlist
+    		• Filmseite
+    	• Login
+    		• Profil
+    		• Passwort vergessen
+    		• Registrieren
+    	• Impressum
+
+Dateistruktur:
+../
+   • imgs
+   	 •.png .jpg ...
+   • pages
+   	 •.html
+   • styles
+   	 •.css
+
+
