@@ -16,7 +16,7 @@
   <div class="container flex_row">
 
   <div>SiteName</div>
-  <div>Menü</div>
+    <div><p>Menü</p></div>
 
     <div>
     </div>
@@ -33,7 +33,7 @@
 </header>
 
 <main>
-
+<div class="container flex_row">
     <div class="container flex_row">
       <!-- highlights -->
   <div class="boxbig box" >
@@ -43,7 +43,7 @@
       <!-- (A1) SLIDE 1 -->
       <input type="radio" name="slides" id="slide1" checked>
       <div class="slidecontent">
-          <div class="test"><img></div>
+          <div class="background"><img class="foreground"></div>
           <p>Alles Steht Kopf 1</p>
           <label for="slide2" class="next">&#9654;</label>
       </div>
@@ -51,7 +51,7 @@
       <!-- (A2) SLIDE 2 -->
       <input type="radio" name="slides" id="slide2">
       <div class="slidecontent">
-        <div><img></div>
+        <div class="background"><img class="foreground"></div>
         <p>Alles Steht Kopf 2</p>
         <label for="slide1" class="last">&#9664;</label>
         <label for="slide3" class="next">&#9654;</label>
@@ -60,7 +60,7 @@
       <!-- (A3) SLIDE 3 -->
       <input type="radio" name="slides" id="slide3">
       <div class="slidecontent">
-        <div><img></div>
+        <div class="background"><img class="foreground"></div>
         <p>Barbie</p>
         <label for="slide2" class="last">&#9664;</label>
       </div>
@@ -110,16 +110,27 @@
       </div>
   </div>
 
-</main>
 
 <aside>
 
   <div class="container flex_col space_between">
-  <div class="boxbig asidebox">BOX1</div>
-    <div class="asidebox">BOX2</div>
+  <div class="boxbig asidebox">
+    <div class="background">
+      <img class="foreground">
+      <p>Der neue Deadpool Film erscheint bald!</p>
+    </div>
+  </div>
+
+    <div class="asidebox">
+      <p >
+        In „Alles steht Kopf 2“ wird das aus dem ersten Teil bekannte, fünfköpfige Team an Gefühlen vergrößert. Die Entscheidung, welche Emotionen im Sequel dazustoßen, fiel den Kreativköpfen bei Pixar jedoch nicht allzu leicht.
+      </p>
+    </div>
   </div>
 
 </aside>
+</div>
+</main>
 
 <footer>
 

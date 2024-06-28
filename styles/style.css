@@ -26,15 +26,13 @@ header
 
 header > div
 {
+  font-size: calc(1vw + 1vh);
+  width: 100%;
+  height: 100%;
 }
 
 aside
 {
-  grid-row-start: 3;
-  grid-row-end: 9;
-  grid-column-start: 8;
-  grid-column-end: 11;
-
   div
   {
   background-color: brown;
@@ -46,7 +44,7 @@ main
   grid-row-start: 3;
   grid-row-end: 9;
   grid-column-start: 1;
-  grid-column-end: 8;
+  grid-column-end: 11;
 
   background-color: green;
 }
@@ -92,6 +90,20 @@ footer
 justify-content: space-between;
 }
 
+header > div
+{
+  width: 50%;
+}
+main > div.container
+{
+ align-items: start;
+}
+main > div.container > div.container
+{
+  width: 80%;
+  height: 100%;
+}
+
 .box, .mainbox, .asidebox, .footerbox
 {
   border: whitesmoke solid 2px;
@@ -115,16 +127,12 @@ justify-content: space-between;
 {
   background-color: #888888;
   height: 100%;
-
+  width: 100%;
 }
-
 .mainbox > div > p
 {
   margin: 0;
   text-align: center;
-  text-wrap: wrap;
-  font-size: calc(1vw + 2vh);
-  overflow-wrap: break-word;
 }
 
 .asidebox
@@ -133,6 +141,32 @@ justify-content: space-between;
   height: 200px;
 }
 
+.asidebox > div
+{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  text-align: center;
+}
+
+.asidebox > div > img + p
+{
+  position: absolute;
+  margin: 0;
+  bottom: 0;
+  left: 0;
+  font-size: 1.2vw;
+  background: rgba(0, 0, 0, 0.7);
+}
+.asidebox >  p
+{
+  margin: 0;
+  font-size: calc(0.6vw + 1vh);
+  overflow-wrap: break-word;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+}
 .footerbox
 {
   height: 50px;
@@ -153,6 +187,9 @@ justify-content: space-between;
 
 .flexText
 {
+  font-size: calc(1vw + 1vh);
+  width: 100%;
+  height: 100%;
   text-wrap: wrap;
   overflow-wrap: break-word;
 }
@@ -188,7 +225,20 @@ input:checked ~ label {
   height: 100%;
 }
 
+.background
+{
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
 
+.foreground
+{
+  backdrop-filter: blur(20px);
+  height: 100%;
+  width: 100%;
+}
 
 /* SHOW SELECTED SLIDE ONLY */
 .slides input[type="radio"]
@@ -256,20 +306,6 @@ input:checked ~ label {
 .slides label.last { left: 10px; }
 .slides label.next { right: 10px; }
 
-div.slidecontent > div > img
-{
-  backdrop-filter: blur(20px);
-  height: 100%;
-  width: 100%;
-}
-
-div.slidecontent > div
-{
-  height: 100%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
 
 /* background of first slide */
 #slide1 + div > div
@@ -288,4 +324,14 @@ div.slidecontent > div
 {
   background-image: url("../imgs/movies/barbie/bg.jpg");
   img {content: url("../imgs/movies/barbie/banner.jpg");}
+}
+
+.asidebox > div
+{
+  background-image: url("../imgs/movies/deadpoolandwolverine/deadpoolandwolverine.jpg");
+  img {
+    content: url("../imgs/movies/deadpoolandwolverine/deadpoolandwolverine.jpg");
+    object-fit: contain;
+
+  }
 }
