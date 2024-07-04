@@ -17,10 +17,13 @@ header
   grid-row-end: 3;
   grid-column-start: 1;
   grid-column-end: 11;
-
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 1;
   div
   {
-  background-color: midnightblue;
+  background-color: #c73030;
   }
 }
 
@@ -33,20 +36,24 @@ header > div
 
 aside
 {
-  div
-  {
-  background-color: brown;
-  }
+display: grid;
+  grid-row-start: 3;
+  grid-row-end: 9;
+  grid-column-start: 8;
+  grid-column-end: 11;
+  background-color: #3a3a3a;
 }
 
 main
 {
+  display: grid;
+
   grid-row-start: 3;
   grid-row-end: 9;
   grid-column-start: 1;
-  grid-column-end: 11;
+  grid-column-end: 9;
 
-  background-color: green;
+  background-color: #292929;
 }
 
 footer
@@ -64,7 +71,6 @@ footer
 
 .container
 {
-  border: black solid 3px;
 
   display: flex;
   flex-wrap: wrap;
@@ -94,19 +100,25 @@ header > div
 {
   width: 50%;
 }
+
+header > div > label > input
+{
+  margin: 15px;
+  height: calc(1.5vw + 1vh);
+}
+
 main > div.container
 {
  align-items: start;
 }
 main > div.container > div.container
 {
-  width: 80%;
+  width: 80.8%;
   height: 100%;
 }
 
 .box, .mainbox, .asidebox, .footerbox
 {
-  border: whitesmoke solid 2px;
   margin: 5px 5px 5px 5px;
 
 }
@@ -123,6 +135,10 @@ main > div.container > div.container
   height: 100px;
 }
 
+.mainbox>div:hover
+{
+  background-color: #292929;
+}
 .mainbox > div
 {
   background-color: #888888;
@@ -171,6 +187,11 @@ main > div.container > div.container
 {
   height: 50px;
 }
+
+.footerbox > *
+{
+}
+
 .boxbig
 {
   width: 90%;
@@ -193,11 +214,32 @@ main > div.container > div.container
   text-wrap: wrap;
   overflow-wrap: break-word;
 }
-
+/* hoverable */
+.hoverable:hover
+{
+  scale: 110%;
+}
+/* links */
+a {text-decoration: none}
 a:visited { text-decoration: none; color:white; }
 a:hover { text-decoration: none; color:blue; }
 a:focus { text-decoration: none; color:yellow; }
 /* a:hover, a:active { text-decoration: none; color:black } */
+
+.center_div
+{
+  margin: auto auto auto auto;
+}
+
+.center_text
+{
+  text-align: center;
+  div > p
+  {
+  padding: 10%;
+
+  }
+}
 
 /* rating system */
 input[name="star"] {
@@ -240,6 +282,12 @@ input:checked ~ label {
   width: 100%;
 }
 
+.asidebox>p
+{
+  text-overflow: fade;
+  overflow-wrap: break-word;
+  overflow-y: scroll;
+}
 /* SHOW SELECTED SLIDE ONLY */
 .slides input[type="radio"]
 {
@@ -334,4 +382,15 @@ input:checked ~ label {
     object-fit: contain;
 
   }
+}
+
+@media only screen and (max-width: 1177px)
+{
+  #main
+  {
+  }
+  aside
+  {
+  }
+
 }

@@ -15,26 +15,22 @@
 <header>
   <div class="container flex_row">
 
-  <div>SiteName</div>
-    <div><p>Menü</p></div>
+  <div class="hoverable">SiteName</div>
 
-    <div>
-    </div>
-
-    <div>Entdecken</div>
+    <div class="hoverable">Entdecken</div>
   <label>
   <input type="text" placeholder="Search...">
   </label>
 
-    <a href="top_movies.html" target="_blank" rel="noopener noreferrer">Top-Filme</a>
+    <a class="hoverable" href="top_movies.html" target="_blank" rel="noopener noreferrer">Top-Filme</a>
     <div>Watchlist</div>
-    <a class="login" href="login_page.html" target="_blank" rel="noopener noreferrer">LOGIN</a>
+    <a class="login hoverable" href="login_page.html" target="_blank" rel="noopener noreferrer">LOGIN</a>
   </div>
 </header>
 
 <main>
 <div class="container flex_row">
-    <div class="container flex_row">
+    <div class="container flex_row" id="main">
       <!-- highlights -->
   <div class="boxbig box" >
 
@@ -70,19 +66,19 @@
 
       <div class="container flex_row ">
       <!-- List of watched movies -->
-  <div class="mainbox">
+  <div class="mainbox center_text">
     <div>
-      <p>alle geschauten Filme auf einem Blick</p>
+      <p>Hier sind alle geschauten Filme auf einem Blick</p>
     </div>
   </div>
       <!-- Review movies -->
-  <div class="mainbox">
+  <div class="mainbox center_text">
     <div>
-      <p>Zeit Filme zu bewerten</p>
+      <p>Es ist Zeit Filme zu bewerten</p>
     </div>
   </div>
       <!-- add movie to favs -->
-  <div class="mainbox">
+  <div class="mainbox center_text">
     <div>
       <p>Lieblingsfilme? Füge sie zu deiner Liste hinzu!</p>
     </div>
@@ -90,19 +86,19 @@
         <div class="container flex_row ">
   </div>
       <!-- add movie to watchlist -->
-  <div class="mainbox">
+  <div class="mainbox center_text">
     <div>
       <p>Was wollte ich nochmal schauen?</p>
     </div>
   </div>
       <!-- subscribe movie for updates -->
-  <div class="mainbox">
+  <div class="mainbox center_text">
     <div>
       <p> abboniere Filme und bleibe auf dem neusten Stand</p>
     </div>
   </div>
       <!-- ??? -->
-  <div class="mainbox">
+  <div class="mainbox center_text">
     <div>
       <p>????????????????????????</p>
     </div>
@@ -110,11 +106,13 @@
       </div>
   </div>
 
+</main>
+
 
 <aside>
 
   <div class="container flex_col space_between">
-  <div class="boxbig asidebox">
+  <div class="boxbig asidebox hoverable">
     <div class="background">
       <img class="foreground">
       <p>Der neue Deadpool Film erscheint bald!</p>
@@ -122,24 +120,25 @@
   </div>
 
     <div class="asidebox">
-      <p >
-        In „Alles steht Kopf 2“ wird das aus dem ersten Teil bekannte, fünfköpfige Team an Gefühlen vergrößert. Die Entscheidung, welche Emotionen im Sequel dazustoßen, fiel den Kreativköpfen bei Pixar jedoch nicht allzu leicht.
+      <p>
+        Die genaue Handlung von "Deadpool & Wolverine" bleibt nach wie vor ein gut gehütetes Geheimnis, aber bisherige Hinweise lassen bereits spannende Möglichkeiten erahnen. Zum ersten Mal wird der Film Teil des Marvel Cinematic Universe sein, was darauf hindeutet, dass das Multiversum eine bedeutende Rolle spielen könnte. Dies könnte auch eine Erklärung für das Erscheinen von Wolverine liefern. In diesem Kontext eröffnen sich interessante Verbindungen zu Loki, Mobius und der Time Variance Authority. Die Gegenspielerin der beiden Helden ist eine junge Cassandra Nova, die Schwester von Professor Charles Xavier.
       </p>
     </div>
   </div>
 
+
+
 </aside>
 </div>
-</main>
 
 <footer>
 
   <div class="container flex_row">
-  <div class="footerbox">BOX1</div>
-    <div class="footerbox">BOX2</div>
-    <div class="footerbox">BOX3</div>
-    <div class="footerbox">BOX4</div>
-    <div class="footerbox">BOX5</div>
+  <div class="footerbox"><p class="center_text">Impressum</p></div>
+    <div class="footerbox"><p class="center_text">Kontakt</p></div>
+    <div class="footerbox"><p class="center_text">Neuigkeiten</p></div>
+    <div class="footerbox"><p class="center_text">BOX4</p></div>
+    <div class="footerbox"><p class="center_text">Hilfe</p></div>
   </div>
 
 </footer>
