@@ -27,7 +27,7 @@ header
   background-color: #c73030;
 }
 
-header > div
+header > div, footer > div
 {
   font-size: calc(1vw + 1vh);
   width: 100%;
