@@ -4,10 +4,11 @@ html, body {
     background: #888888
 }
 
-div.fillheight
+header
 {
-    height: calc(10vw + 100vh);
+    height: 10%;
 }
+
 
 .box > form > fieldset
 {
@@ -25,7 +26,7 @@ form, .box
     width: calc(10vw + 30vh);
 }
 
-#username, #password, #login, #email, #passwordrepeat, a
+#username, #password, #login, #email, #passwordrepeat, form > fieldset > a
 {
     margin: 0 0 5% 0;
     width: 100%;

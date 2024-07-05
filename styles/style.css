@@ -1,6 +1,6 @@
 body, html
 {
-  background-color: rebeccapurple;
+  background-color: gray;
   color: whitesmoke;
   margin: 0;
   height: 100%;
@@ -380,28 +380,23 @@ input:checked ~ label {
 #slide1 + div > div
 {
   background-image: url("../imgs/movies/allesstehtkopf1/allesstehtkopf1banner.jpg");
-  img {content: url("../imgs/movies/allesstehtkopf1/banner.jpg");}
 }
 /* background of second slide */
 #slide2 + div > div
 {
   background-image: url("../imgs/movies/allesstehtkopf2/allesstehtkopf2banner.jpg");
-  img {content: url("../imgs/movies/allesstehtkopf2/banner.jpg");}
 }
 /* background of third slide */
 #slide3 + div > div
 {
   background-image: url("../imgs/movies/barbie/bg.jpg");
-  img {content: url("../imgs/movies/barbie/banner.jpg");}
 }
 
 .asidebox > div
 {
   background-image: url("../imgs/movies/deadpoolandwolverine/deadpoolandwolverine.jpg");
   img {
-    content: url("../imgs/movies/deadpoolandwolverine/deadpoolandwolverine.jpg");
     object-fit: contain;
-
   }
 }
 
