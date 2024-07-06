@@ -13,56 +13,135 @@
 
 
 <header>
-  <div class="container flex_row">
+  <div class="container flex_row fillheight">
 
-  <div>SiteName</div>
-  <div>Menü</div>
+  <div class="hoverable">SiteName</div>
 
-    <div>
-    </div>
-
-    <div>Entdecken</div>
+    <div class="hoverable">Entdecken</div>
   <label>
   <input type="text" placeholder="Search...">
   </label>
 
-    <a href="top_movies.html" target="_blank" rel="noopener noreferrer">Top-Filme</a>
+    <a class="hoverable" href="top_movies.html" target="_blank" rel="noopener noreferrer">Top-Filme</a>
     <div>Watchlist</div>
-    <a class="login" href="login_page.html" target="_blank" rel="noopener noreferrer">LOGIN</a>
+    <a class="login hoverable" href="login_page.html" target="_blank" rel="noopener noreferrer">LOGIN</a>
   </div>
 </header>
 
 <main>
+<div class="container flex_row fillheight">
+    <div class="container flex_row " id="main">
+      <!-- highlights -->
+  <div class="boxbig box" >
 
-    <div class="container flex_row">
-  <div class="boxbig box" ></div>
-  <div class="mainbox">BOX2</div>
-  <div class="mainbox">BOX3</div>
-  <div class="mainbox">BOX4</div>
-  <div class="mainbox">BOX5</div>
-  <div class="mainbox">BOX6</div>
-  <div class="mainbox">BOX7</div>
+    <!-- (PART A) SLIDES -->
+    <div class="slides">
+      <!-- (A1) SLIDE 1 -->
+      <input type="radio" name="slides" id="slide1" checked>
+      <div class="slidecontent">
+          <div class="background"><img alt="Alles Steht Kopf 1" class="foreground" src="../imgs/movies/allesstehtkopf1/banner.jpg"></div>
+          <p>Alles Steht Kopf 1</p>
+          <label for="slide2" class="next">&#9654;</label>
+      </div>
+
+      <!-- (A2) SLIDE 2 -->
+      <input type="radio" name="slides" id="slide2">
+      <div class="slidecontent">
+        <div class="background"><img alt="Alles Steht Kopf 2" class="foreground" src="../imgs/movies/allesstehtkopf2/banner.jpg">></div>
+        <p>Alles Steht Kopf 2</p>
+        <label for="slide1" class="last">&#9664;</label>
+        <label for="slide3" class="next">&#9654;</label>
+      </div>
+
+      <!-- (A3) SLIDE 3 -->
+      <input type="radio" name="slides" id="slide3">
+      <div class="slidecontent">
+        <div class="background"><img alt="Barbie" class="foreground" src="../imgs/movies/barbie/banner.jpg"></div>
+        <p>Barbie</p>
+        <label for="slide2" class="last">&#9664;</label>
+      </div>
+    </div>
+
   </div>
 
+      <div class="container flex_row ">
+      <!-- List of watched movies -->
+  <div class="mainbox center_text">
+    <div>
+      <p>Hier sind alle geschauten Filme auf einem Blick</p>
+    </div>
+  </div>
+      <!-- Review movies -->
+  <div class="mainbox center_text">
+    <div>
+      <p>Es ist Zeit Filme zu bewerten</p>
+    </div>
+  </div>
+      <!-- add movie to favs -->
+  <div class="mainbox center_text">
+    <div>
+      <p>Lieblingsfilme? Füge sie zu deiner Liste hinzu!</p>
+    </div>
+  </div>
+        <div class="container flex_row ">
+  </div>
+        </div>
+        <div class="container flex_row ">
+      <!-- add movie to watchlist -->
+  <div class="mainbox center_text">
+    <div>
+      <p>Was wollte ich nochmal schauen?</p>
+    </div>
+  </div>
+      <!-- subscribe movie for updates -->
+  <div class="mainbox center_text">
+    <div>
+      <p> abboniere Filme und bleibe auf dem neusten Stand</p>
+    </div>
+  </div>
+      <!-- ??? -->
+  <div class="mainbox center_text">
+    <div>
+      <p>????????????????????????</p>
+    </div>
+  </div>
+      </div>
+  </div>
+</div>
 </main>
 
-<aside>
 
-  <div class="container flex_col space_between">
-  <div class="boxbig asidebox">BOX1</div>
-    <div class="asidebox">BOX2</div>
+
+<aside class="fillheight">
+
+  <div class="container flex_col space_between flexstart">
+  <div class="boxbig asidebox " id="aside_imagecover">
+    <div class="background hoverable">
+      <img alt="Deadpool & Wolverine" class="foreground" src="../imgs/movies/deadpoolandwolverine/DeadpoolandWolverine.jpg">
+      <p>Der neue Deadpool Film erscheint bald!</p>
+    </div>
   </div>
+
+    <div class="asidebox">
+      <p>
+        Die genaue Handlung von "Deadpool & Wolverine" bleibt nach wie vor ein gut gehütetes Geheimnis, aber bisherige Hinweise lassen bereits spannende Möglichkeiten erahnen. Zum ersten Mal wird der Film Teil des Marvel Cinematic Universe sein, was darauf hindeutet, dass das Multiversum eine bedeutende Rolle spielen könnte. Dies könnte auch eine Erklärung für das Erscheinen von Wolverine liefern. In diesem Kontext eröffnen sich interessante Verbindungen zu Loki, Mobius und der Time Variance Authority. Die Gegenspielerin der beiden Helden ist eine junge Cassandra Nova, die Schwester von Professor Charles Xavier.
+      </p>
+    </div>
+  </div>
+
+
 
 </aside>
 
+
 <footer>
 
-  <div class="container flex_row">
-  <div class="footerbox">BOX1</div>
-    <div class="footerbox">BOX2</div>
-    <div class="footerbox">BOX3</div>
-    <div class="footerbox">BOX4</div>
-    <div class="footerbox">BOX5</div>
+  <div class="container flex_row fillheight">
+  <div class="footerbox"><p class="center_text">Impressum</p></div>
+    <div class="footerbox"><p class="center_text">Kontakt</p></div>
+    <div class="footerbox"><p class="center_text">Neuigkeiten</p></div>
+    <div class="footerbox"><p class="center_text">BOX4</p></div>
+    <div class="footerbox"><p class="center_text">Hilfe</p></div>
   </div>
 
 </footer>

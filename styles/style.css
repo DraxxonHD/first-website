@@ -1,11 +1,15 @@
-body
+body, html
 {
   background-color: #888888;
   color: whitesmoke;
+  margin: 0;
+  height: 100%;
 }
 
 .grid
 {
+  margin: 0;
+  height: 100%;
   display: grid;
   grid-template-columns: auto auto auto auto auto auto auto auto auto  auto ;
   grid-template-rows: auto auto auto auto auto auto auto auto auto auto ;
@@ -13,42 +17,50 @@ body
 
 header
 {
+
   grid-row-start: 1;
   grid-row-end: 3;
   grid-column-start: 1;
   grid-column-end: 11;
-
-  div
-  {
-  background-color: midnightblue;
-  }
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background-color: #c73030;
 }
 
-header > div
+header > div, footer > div
 {
+  font-size: calc(1vw + 1vh);
+  width: 100%;
+  height: 100%;
 }
 
 aside
 {
-  grid-row-start: 3;
-  grid-row-end: 9;
-  grid-column-start: 8;
-  grid-column-end: 11;
 
-  div
-  {
-  background-color: brown;
-  }
+ display: grid;
+ grid-row-start: 3;
+ grid-row-end: 9;
+ grid-column-start: 8;
+ grid-column-end: 11;
+
+ background-color: #3a3a3a;
 }
 
 main
 {
+
   grid-row-start: 3;
   grid-row-end: 9;
   grid-column-start: 1;
   grid-column-end: 8;
 
-  background-color: green;
+  background-color: #292929;
+}
+
+#main
+{
 }
 
 footer
@@ -57,16 +69,17 @@ footer
   grid-row-end: 11;
   grid-column-start: 1;
   grid-column-end: 11;
+  height: 100%;
 
   div
   {
+    height: 100%;
   background-color: rebeccapurple;
   }
 }
 
 .container
 {
-  border: black solid 3px;
 
   display: flex;
   flex-wrap: wrap;
@@ -92,9 +105,34 @@ footer
 justify-content: space-between;
 }
 
+.flexstart
+{
+  justify-content: flex-start;
+}
+
+header > div
+{
+  width: 50%;
+}
+
+header > div > label > input
+{
+  margin: 15px;
+  height: calc(1.5vw + 1vh);
+}
+
+main > div.container
+{
+ align-items: start;
+}
+main > div.container > div.container
+{
+  width: 80.8%;
+  height: 100%;
+}
+
 .box, .mainbox, .asidebox, .footerbox
 {
-  border: whitesmoke solid 2px;
   margin: 5px 5px 5px 5px;
 
 }
@@ -105,47 +143,128 @@ justify-content: space-between;
   height: 150px;
 }
 
+.fillheight
+{
+  height: 100%;
+}
+
 .mainbox
 {
   width: 300px;
+  height: 100px;
 }
 
+.mainbox>div:hover
+{
+  background-color: #292929;
+}
+.mainbox > div
+{
+  background-color: #888888;
+  height: 100%;
+  width: 100%;
+}
+.mainbox > div > p
+{
+  margin: 0;
+  text-align: center;
+}
 
 .asidebox
 {
   width: 200px;
-  height: 200px;
+  height: auto;
 }
 
+.asidebox > div
+{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  text-align: center;
+}
+
+.asidebox > div > img + p
+{
+  position: absolute;
+  margin: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  font-size: 1.2vw;
+  background: rgba(0, 0, 0, 0.7);
+}
+.asidebox >  p
+{
+  margin: 0;
+  overflow-wrap: break-word;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+}
 .footerbox
 {
   height: 50px;
 }
+
+.footerbox > *
+{
+}
+
 .boxbig
 {
   width: 90%;
-  height: 400px;
+  height: calc(10vw + 20vh);
 }
 
 .login
 {
   background-color: black;
-  width: 80px;
+  width: calc(5vw + 3vh);
   text-align: center;
   color: whitesmoke;
 }
 
 .flexText
 {
+  font-size: calc(1vw + 1vh);
+  width: 100%;
+  height: 100%;
   text-wrap: wrap;
   overflow-wrap: break-word;
 }
-
+/* hoverable */
+.hoverable:hover
+{
+  scale: 110%;
+}
+/* links */
+a {text-decoration: none}
 a:visited { text-decoration: none; color:white; }
 a:hover { text-decoration: none; color:blue; }
 a:focus { text-decoration: none; color:yellow; }
 /* a:hover, a:active { text-decoration: none; color:black } */
 
+.center_div
+{
+  margin: auto auto auto auto;
+}
+
+.center_text
+{
+  text-align: center;
+  div > p
+  {
+  height: 100%;
+    display: flex;
+    align-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
+
+/* rating system */
 input[name="star"] {
   display: none;
 }
@@ -163,9 +282,175 @@ input:checked ~ label {
   float: right;
 }
 
+
 .imginbox
 {
   object-fit: cover;
   width: 100%;
   height: 100%;
+}
+
+.background
+{
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.foreground
+{
+  backdrop-filter: blur(20px);
+  height: 100%;
+  width: 100%;
+}
+
+.asidebox>p
+{
+  text-overflow: fade;
+  overflow-wrap: break-word;
+  overflow-y: clip;
+
+}
+/* SHOW SELECTED SLIDE ONLY */
+.slides input[type="radio"]
+{
+  display: none;
+}
+.slides > div {
+  height: 100%;
+  margin: 0;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.5s;
+}
+.slides input[type="radio"]:checked + div{
+  visibility: visible;
+  opacity: 1;
+}
+
+/* SLIDES WRAPPER & SHARED */
+.slides, .slides > div{
+  position: relative;
+  height: inherit;
+  width: 100%;
+}
+.slides > div ,.slides p, .slides label {
+  position: absolute;
+}
+.slides  label, .slides p {
+  color: #fff;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+/* SLIDE IMAGES */
+.slides > div img {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* SLIDE CAPTION */
+.slides p {
+  margin: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 4vw;
+}
+
+/* LAST & NEXT BUTTONS */
+.slides label {
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 4vw;
+  height: 4vw;
+  border-radius: 50%;
+  font-size: 2.5vw;
+  cursor: pointer;
+}
+.slides label.last { left: 10px; }
+.slides label.next { right: 10px; }
+
+
+/* background of first slide */
+#slide1 + div > div
+{
+  background-image: url("../imgs/movies/allesstehtkopf1/allesstehtkopf1banner.jpg");
+}
+/* background of second slide */
+#slide2 + div > div
+{
+  background-image: url("../imgs/movies/allesstehtkopf2/allesstehtkopf2banner.jpg");
+}
+/* background of third slide */
+#slide3 + div > div
+{
+  background-image: url("../imgs/movies/barbie/bg.jpg");
+}
+
+.asidebox > div
+{
+  background-image: url("../imgs/movies/deadpoolandwolverine/deadpoolandwolverine.jpg");
+  img {
+    object-fit: contain;
+  }
+}
+
+@media only screen and (max-width: 976px)
+{
+
+  main
+  {
+
+    grid-row-start: 3;
+    grid-row-end: 7;
+    grid-column-start: 1;
+    grid-column-end: 11;
+
+    background-color: #292929;
+  }
+
+  aside
+  {
+
+    display: grid;
+    grid-row-start: 7;
+    grid-row-end: 10;
+    grid-column-start: 1;
+    grid-column-end: 11;
+
+    background-color: #3a3a3a;
+  }
+
+  footer
+  {
+    grid-row-start: 10;
+    grid-row-end: 11;
+    grid-column-start: 1;
+    grid-column-end: 11;
+    height: 100%;
+  }
+
+  #aside_imagecover
+  {
+    width: 50%
+  }
+  .asidebox
+  {
+    width: 99%;
+  }
+
+  .asidebox>p
+  {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
