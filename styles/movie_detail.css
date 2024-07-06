@@ -59,7 +59,7 @@ p.flexText
     font-size: calc(1vw + 1vh);
     margin: 0 0 1% 0;
     height: auto;
-    border: 2px solid #292929;
+   /* border: 2px solid #292929; */
 }
 
 th, td
