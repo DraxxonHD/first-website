@@ -37,6 +37,17 @@ header > div, footer > div
   height: 100%;
 }
 
+header > div.container > *
+{
+  padding: 0 10px 0 0;
+}
+
+#logo
+{
+  width: calc(7vw + 3vh);
+  height: auto;
+}
+
 aside
 {
 
