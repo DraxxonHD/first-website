@@ -27,6 +27,7 @@ header
   left: 0;
   z-index: 1;
   background-color: #c73030;
+  padding: 10px;
 }
 
 header > div, footer > div

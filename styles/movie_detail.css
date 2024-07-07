@@ -51,6 +51,11 @@ h6
     font-size: calc(1vw + 1vh);
     margin: 2% 0 0 0;
 }
+h2
+{
+    font-size: calc(2vw + 1vh);
+    margin: 2% 0 0 0;
+}
 p.flexText
 {
     text-overflow: fade;
@@ -64,9 +69,11 @@ p.flexText
 
 th, td
 {
-    font-size: calc(1vw + 1vh);
+    font-size: calc(1vw + 0.5vh);
+    overflow-wrap: break-word;
     border-top:1px solid white;
     text-align: center;
+    height: auto;
 }
 
 td:nth-child(2), th:nth-child(2)
@@ -76,8 +83,16 @@ td:nth-child(2), th:nth-child(2)
 
 table
 {
+    margin: 5% 0 0 0;
     width: 100%
 }
+
+td
+{
+    padding-bottom: 10px;
+
+}
+
 
 .background
 {
