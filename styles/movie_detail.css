@@ -21,7 +21,7 @@ main > div > div
     box-sizing: border-box;
     width: 30%;
     height: 100%;
-    margin: 1%;
+    margin: 1% 0 1% 0;
     padding: 1%;
     background-color: #3a3a3a;
 }
@@ -60,11 +60,16 @@ p.flexText
 {
     text-overflow: fade;
     overflow-wrap: break-word;
-   /* overflow-y: scroll; */
     font-size: calc(1vw + 1vh);
     margin: 0 0 1% 0;
     height: auto;
-   /* border: 2px solid #292929; */
+ /*   border: 2px solid #888888; */
+}
+
+h2 + h6 + p
+{
+    overflow-y: scroll;
+    height: 60%;
 }
 
 th, td
