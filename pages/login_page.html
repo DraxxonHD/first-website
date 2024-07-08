@@ -2,11 +2,13 @@
 <html lang="en" style="height: 100%">
 <head>
 
-  <link rel="stylesheet" href="../styles/style.css">
+  <link rel="stylesheet" href="../styles/homepage.css">
   <link rel="stylesheet" href="../styles/login_styles.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta charset="UTF-8">
-  <title>Title</title>
+  <title>Anmelden</title>
+  <link rel="icon" type="image/x-icon" href="../imgs/meta/favicon.png">
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -14,7 +16,7 @@
 <header>
   <div class="container flex_row ">
 
-    <div class="hoverable">SiteName</div>
+    <div class="hoverable"><a href="homepage.html" target="_blank" rel="noopener noreferrer"><img alt="logo" src="../imgs/meta/logo.png" id="logo"></a></div>
 
     <div class="hoverable">Entdecken</div>
     <label>
@@ -34,19 +36,19 @@
     <form >
       <fieldset class="container flex_col">
 
-        <label>LOGIN</label>
+        <label>Anmelden</label>
 
-        <label for="username">Username</label>
+        <label for="username">Benutzername</label>
         <input type="text" id="username">
 
         <label for="password">Passwort</label>
         <input type="password" id="password">
 
-        <button type="submit" class="login" id="login">LOGIN</button>
+        <button type="submit" class="login" id="login">Anmelden</button>
 
         <!-- rel="noopener noreferrer" for security reasons  -->
-        <a href="forgot_psw.html" target="_blank" rel="noopener noreferrer" >frogot password?</a>
-        <a href="register_page.html" target="_blank" rel="noopener noreferrer">no account?</a>
+        <a href="forgot_psw.html" target="_blank" rel="noopener noreferrer" >Passwort vergessen?</a>
+        <a href="register_page.html" target="_blank" rel="noopener noreferrer">Noch kein Account?</a>
 
       </fieldset>
     </form>
@@ -58,11 +60,10 @@
 
 <footer>
   <div class="container flex_row fillheight">
-    <div class="footerbox"><p class="center_text">Impressum</p></div>
-    <div class="footerbox"><p class="center_text">Kontakt</p></div>
-    <div class="footerbox"><p class="center_text">Neuigkeiten</p></div>
-    <div class="footerbox"><p class="center_text">BOX4</p></div>
-    <div class="footerbox"><p class="center_text">Hilfe</p></div>
+    <div class="hoverable footerbox"><p class="center_text">Impressum</p></div>
+    <div class="hoverable footerbox"><p class="center_text">Kontakt</p></div>
+    <div class="hoverable footerbox"><p class="center_text">Neuigkeiten</p></div>
+    <div class="hoverable footerbox"><p class="center_text">Hilfe</p></div>
   </div>
 
 </footer>

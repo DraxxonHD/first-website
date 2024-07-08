@@ -4,8 +4,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title></title>
-  <link rel="stylesheet" href="../styles/style.css">
+  <link rel="stylesheet" href="../styles/homepage.css">
+  <title>Homepage</title>
+  <link rel="icon" type="image/x-icon" href="../imgs/meta/favicon.png">
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -15,15 +17,15 @@
 <header>
   <div class="container flex_row fillheight">
 
-  <div class="hoverable">SiteName</div>
+  <div class="hoverable"><a href="homepage.html" target="_blank" rel="noopener noreferrer"><img alt="logo" src="../imgs/meta/logo.png" id="logo"></a></div>
 
     <div class="hoverable">Entdecken</div>
   <label>
-  <input type="text" placeholder="Search...">
+  <input type="text" placeholder="Suche einen Film...">
   </label>
 
     <a class="hoverable" href="top_movies.html" target="_blank" rel="noopener noreferrer">Top-Filme</a>
-    <div>Watchlist</div>
+    <div class="hoverable"><a>Watchlist</a></div>
     <a class="login hoverable" href="login_page.html" target="_blank" rel="noopener noreferrer">LOGIN</a>
   </div>
 </header>
@@ -47,7 +49,7 @@
       <!-- (A2) SLIDE 2 -->
       <input type="radio" name="slides" id="slide2">
       <div class="slidecontent">
-        <div class="background"><img alt="Alles Steht Kopf 2" class="foreground" src="../imgs/movies/allesstehtkopf2/banner.jpg">></div>
+        <div class="background"><img alt="Alles Steht Kopf 2" class="foreground" src="../imgs/movies/allesstehtkopf2/banner.jpg"></div>
         <p>Alles Steht Kopf 2</p>
         <label for="slide1" class="last">&#9664;</label>
         <label for="slide3" class="next">&#9654;</label>
@@ -68,19 +70,19 @@
       <!-- List of watched movies -->
   <div class="mainbox center_text">
     <div>
-      <p>Hier sind alle geschauten Filme auf einem Blick</p>
+      <p><img class="icon" alt="review_icon" src="../imgs/icons/feedback.png">Hier sind alle geschauten Filme auf einem Blick</p>
     </div>
   </div>
       <!-- Review movies -->
   <div class="mainbox center_text">
     <div>
-      <p>Es ist Zeit Filme zu bewerten</p>
+      <p><img class="icon" alt="review_icon" src="../imgs/icons/review.png">Es ist Zeit Filme zu bewerten!</p>
     </div>
   </div>
       <!-- add movie to favs -->
   <div class="mainbox center_text">
     <div>
-      <p>Lieblingsfilme? Füge sie zu deiner Liste hinzu!</p>
+      <p><img class="icon" alt="review_icon" src="../imgs/icons/heart.png">Lieblingsfilme? Füge sie zu deiner Liste hinzu!</p>
     </div>
   </div>
         <div class="container flex_row ">
@@ -90,19 +92,19 @@
       <!-- add movie to watchlist -->
   <div class="mainbox center_text">
     <div>
-      <p>Was wollte ich nochmal schauen?</p>
+      <p><img class="icon" alt="review_icon" src="../imgs/icons/eye.png">Was wollte ich nochmal schauen?</p>
     </div>
   </div>
       <!-- subscribe movie for updates -->
   <div class="mainbox center_text">
     <div>
-      <p> abboniere Filme und bleibe auf dem neusten Stand</p>
+      <p><img class="icon" alt="review_icon" src="../imgs/icons/newspaper-folded.png"> Abonniere den Newsletter!</p>
     </div>
   </div>
       <!-- ??? -->
   <div class="mainbox center_text">
     <div>
-      <p>????????????????????????</p>
+      <p><img class="icon" alt="review_icon" src="../imgs/icons/share.png">Teile deine Lieblingsfilme!</p>
     </div>
   </div>
       </div>
@@ -117,8 +119,9 @@
   <div class="container flex_col space_between flexstart">
   <div class="boxbig asidebox " id="aside_imagecover">
     <div class="background hoverable">
+      <a href="movie_detail.html" target="_blank" rel="noopener norefferer">
       <img alt="Deadpool & Wolverine" class="foreground" src="../imgs/movies/deadpoolandwolverine/DeadpoolandWolverine.jpg">
-      <p>Der neue Deadpool Film erscheint bald!</p>
+      </a>
     </div>
   </div>
 
@@ -137,11 +140,10 @@
 <footer>
 
   <div class="container flex_row fillheight">
-  <div class="footerbox"><p class="center_text">Impressum</p></div>
-    <div class="footerbox"><p class="center_text">Kontakt</p></div>
-    <div class="footerbox"><p class="center_text">Neuigkeiten</p></div>
-    <div class="footerbox"><p class="center_text">BOX4</p></div>
-    <div class="footerbox"><p class="center_text">Hilfe</p></div>
+  <div class="hoverable footerbox"><p class="center_text">Impressum</p></div>
+    <div class="hoverable footerbox"><p class="center_text">Kontakt</p></div>
+    <div class="hoverable footerbox"><p class="center_text">Neuigkeiten</p></div>
+    <div class="hoverable footerbox"><p class="center_text">Hilfe</p></div>
   </div>
 
 </footer>

@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="stylesheet" href="../styles/style.css">
+  <link rel="stylesheet" href="../styles/homepage.css">
   <link rel="stylesheet" href="../styles/login_styles.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta charset="UTF-8">
-  <title>Title</title>
+  <title>Registrieren</title>
+  <link rel="icon" type="image/x-icon" href="../imgs/meta/favicon.png">
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
 
 <header>
   <div class="container flex_row fillheight">
 
-    <div class="hoverable">SiteName</div>
+    <div class="hoverable"><a href="homepage.html" target="_blank" rel="noopener noreferrer"><img alt="logo" src="../imgs/meta/logo.png" id="logo"></a></div>
 
     <div class="hoverable">Entdecken</div>
     <label>
@@ -34,12 +36,12 @@
       <form>
         <fieldset class="container flex_col">
 
-          <label>REGISTER</label>
+          <label>Registrieren</label>
 
           <label for="email">E-Mail</label>
           <input type="email" id="email">
 
-          <label for="username">Username</label>
+          <label for="username">Benutzername</label>
           <input type="text" id="username">
 
           <label for="password">Passwort</label>
@@ -51,7 +53,7 @@
           <button type="submit" class="login" id="login">REGISTRIEREN</button>
 
           <!-- rel="noopener noreferrer" for security reasons  -->
-          <a href="login_page.html" target="_blank" rel="noopener noreferrer">got account?</a>
+          <a href="login_page.html" target="_blank" rel="noopener noreferrer">Hast bereits ein Account?</a>
 
         </fieldset>
       </form>
@@ -61,6 +63,13 @@
   </div>
 </div>
 
-
+<footer>
+  <div class="container flex_row fillheight">
+    <div class="hoverable footerbox"><p class="center_text">Impressum</p></div>
+    <div class="hoverable footerbox"><p class="center_text">Kontakt</p></div>
+    <div class="hoverable footerbox"><p class="center_text">Neuigkeiten</p></div>
+    <div class="hoverable footerbox"><p class="center_text">Hilfe</p></div>
+  </div>
+</footer>
 </body>
 </html>
