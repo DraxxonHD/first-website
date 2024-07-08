@@ -188,6 +188,13 @@ main > div.container > div.container
   height: auto;
 }
 
+aside > div > .asidebox:last-child
+{
+  text-align: left;
+  padding: 0 10px 0 10px;
+  box-sizing: border-box;
+}
+
 .asidebox > div
 {
   width: 100%;
@@ -354,6 +361,11 @@ input:checked ~ label {
 }
 .slides  label, .slides p {
   color: #fff;
+/*  background: rgba(0, 0, 0, 0.7); */
+}
+
+.slides p
+{
   background: rgba(0, 0, 0, 0.7);
 }
 
@@ -485,5 +497,10 @@ div.mainbox > div > p
     width: 50%;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  aside > div > .asidebox:last-child
+  {
+    text-align: justify;
   }
 }

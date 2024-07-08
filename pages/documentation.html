@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projektdokumentation: Erstellung einer Website mit HTML und CSS</title>
+    <link rel="stylesheet" href="../styles/documentation.css">
+</head>
+<body>
+<h1>Projektdokumentation: Erstellung einer Website mit HTML und CSS</h1>
+
+<h2>1. Einleitung</h2>
+<ul>
+    <li><strong>Projektziel:</strong> Entwicklung einer Website, auf der Nutzer Filme nachsehen und bewerten können.</li>
+    <li><strong>Hintergrund:</strong> Film-Bewertungsplattformen sind beliebt, und wir möchten eine benutzerfreundliche Version erstellen.</li>
+    <li><strong>Zielgruppe:</strong> Filmfans, die Filme entdecken, bewerten und empfehlen möchten.</li>
+</ul>
+
+<h2>2. Anforderungsanalyse</h2>
+<ul>
+    <li><strong>Funktionale Vorstellung:</strong>
+        <br>Benutzer können:
+        <ul>
+            <li>Filme entdecken und deren Details anzeigen</li>
+            <li>Filme bewerten und Rezensionen schreiben</li>
+            <li>Top-Filme anzeigen lassen</li>
+            <li>Registrierung und einloggen</li>
+            <li>Kontaktseite für Anfragen und Feedback nutzen</li>
+        </ul>
+    </li>
+    <li><strong>Anforderungen:</strong>
+        <ul>
+            <li>Benutzerfreundliches Design und einfache Navigation</li>
+            <li>Responsive Design für verschiedene Bildschirmgrößen</li>
+            <li>Visuell ansprechendes Layout</li>
+        </ul>
+    </li>
+</ul>
+
+<h2>3. Projektplanung und -organisation</h2>
+<ul>
+    <li><strong>Projektstrukturplan:</strong>
+        <ul>
+            <li>Planung</li>
+            <li>Implementierung der HTML-Struktur mit Grid und Flexboxen</li>
+            <li>Styling mit CSS</li>
+            <li>Testing</li>
+        </ul>
+    </li>
+    <li><strong>Zeitplan:</strong>
+        <ul>
+            <li>Woche 1: Generelle Planung</li>
+            <li>Woche 2: Implementierung der HTML-Struktur und CSS-Styling</li>
+            <li>Woche 3: Testing, Fehlerbehebung und Dokumentation</li>
+        </ul>
+    </li>
+    <li><strong>Ressourcenplanung:</strong> Verwendete Hardware, Software und Tools (z.B. Texteditoren, Design-Tools).</li>
+
+    <li><strong>Aufteilung der Webseiten:</strong>
+        <ul>
+            <li>Michelle: Entdecken, Kontakt, Account</li>
+            <li>DraxxonHD: Homepage, Login & co., Top-Filme, Detailansicht</li>
+        </ul>
+    </li>
+</ul>
+
+
+<h2>4. Konzept und Design</h2>
+<ul>
+    <li><strong>Design:</strong>
+        <ul>
+            <li>Farbkonzept: Auswahl von Farben für ein ansprechendes Erscheinungsbild</li>
+            <li>Schrift: Verwendung geeigneter Schriftarten und -größen für Lesbarkeit</li>
+        </ul>
+    </li>
+    <li><strong>Inspirationen:</strong>
+        <ul>
+            <li><a href="https://letterboxd.com" target="_blank">https://letterboxd.com</a></li>
+            <li> <a href="https://www.imdb.com/?ref_=nv_home" target="_blank">www.imdb.com</a></li>
+        </ul>
+    </li>
+    <li><strong>Wireframes:</strong>
+        <ul>
+            <h2>Homepage</h2>
+            <img src="../imgs/wireframes/homepage.png" height="593" width="1040"/>
+            <br>
+
+            <h2>Top-Filme</h2>
+            <img src="../imgs/wireframes/top_filme.png" height="593" width="1040"/>
+            <br>
+            <h2>Login/ Passwort vergessen/ Registrieren</h2>
+            <img src="../imgs/wireframes/login.png" height="593" width="1040"/>
+            <img src="../imgs/wireframes/passwort_vergessenn.png" height="593" width="1060"/>
+            <img src="../imgs/wireframes/registrieren.png" height="593" width="1042"/>
+            <br>
+            <h2>Detaiansicht</h2>
+            <img src="../imgs/wireframes/detail_ansicht.png" height="593" width="1053"/></ul>
+    </li>
+</ul>
+
+<h2>5. Implementierung</h2>
+<ul>
+    <li>HTML-Layout erstellen:
+        <ul>
+            <li>Strukturierung der Webseite mit Header, Main und Footer.</li>
+            <li>Verwendung von Grid-Layout für die Gesamtstruktur und Flexbox für Details im Hauptbereich</li>
+            <li>Integration von Medien wie Filmbildern</li>
+        </ul>
+    </li>
+    <li>CSS-Styling:
+        <ul>
+            <li>Definieren von Farben, Schriften und Abständen für ein konsistentes Design</li>
+            <li>Responsive Design mit Media Queries und Flexboxen für verschiedene Geräte</li>
+            <li>Animationen für interaktive Elemente</li>
+        </ul>
+    </li>
+</ul>
+
+<h2>6. Vor- und Nachteile von Flexbox und Grid</h2>
+<p><strong>Flexboxen:</strong></p>
+<ul>
+    <li><strong>Vorteile:</strong>
+        <ul>
+            <li>Einfache und intuitive Ausrichtung und Anordnung von Elementen.</li>
+            <li>Flexibles Layout für dynamische Anpassungen.</li>
+            <li>Effektive Platzierung von Elementen in einer Zeile oder Spalte.</li>
+        </ul>
+    </li>
+    <li><strong>Nachteile:</strong>
+        <ul>
+            <li>Komplexere Layouts erfordern möglicherweise mehrere verschachtelte Flex-Container.</li>
+        </ul>
+    </li>
+</ul>
+
+<p><strong>Grid:</strong></p>
+<ul>
+    <li><strong>Vorteile:</strong>
+        <ul>
+            <li>Mächtige Möglichkeit zur Erstellung von Rasterlayouts</li>
+            <li>Exakte Kontrolle über die Platzierung von Elementen in Zeilen und Spalten</li>
+        </ul>
+    </li>
+    <li><strong>Nachteile:</strong>
+        <ul>
+            <li>Komplexere Nutzung</li>
+            <li>Begrenzte Unterstützung in älteren Browsern</li>
+        </ul>
+    </li>
+</ul>
+
+<h2>7. Testing und Qualitätssicherung</h2>
+<ul>
+    <li><strong>Teststrategie:</strong>
+        <ul>
+            <li>Verwendung von Browser-Entwicklertools</li>
+        </ul>
+    </li>
+</ul>
+<h2>8. Was ausfallen musste</h2>
+<ul>
+    <li><strong>Weitere Konzepte:</strong>
+        <ul>
+            <li>Einbindung von Serien</li>
+            <li>Trailern</li>
+            <li>Referenzlinks (wo die Filme erhältlich sind)</li>
+        </ul>
+    </li>
+    <li><strong>Weitere Webseiten:</strong>
+        <ul>
+            <li>Eine Watchlist</li>
+            <li>Ein Forum</li>
+        </ul>
+    </li>
+</ul>
+<h2>9. Was haben wir mitgenommen?</h2>
+<ul>
+    <li><strong>Lessons Learned:</strong> Erfahrungen und Verbesserungsmöglichkeiten für zukünftige Projekte</li>
+</ul>
+
+<h2>10. Anhang</h2>
+<ul>
+    <li><strong>Inspirationen:</strong> Verwendete Tools, Dokumentationen und Referenzen.</li>
+    <li><strong>Credits:</strong> Verwendete Tools, Dokumentationen und Referenzen.</li>
+</ul>
+</body>
+</html>
