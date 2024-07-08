@@ -359,6 +359,7 @@ input:checked ~ label {
 .hoverable:hover
 {
   scale: 110%;
+  color: #3a3a3a;
 }
 
 /* links */
