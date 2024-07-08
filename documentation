@@ -21,7 +21,11 @@ Entdecken:
 
 ------------------------------------------------------
 Aufteilung des Teams: Contributor und DraxxonHD zusammen, Contributor allein
+<<<<<<< HEAD
+Aufteilung der Webseiten: 
+=======
 Aufteilung der Webseiten:
+>>>>>>> 6f9217984dbd613dacf66e148530e1bc4ef452ca
   Contributor&DraxxonHD: Homepage, Entdecken, Login (+Password vergessen, +Registrieren), Filmseite, Profil
   Möser: Top-Filme, Watchlist, Impressum
 
@@ -50,5 +54,8 @@ Dateistruktur:
    	 •.html
    • styles
    	 •.css
+<<<<<<< HEAD
+=======
 
 
+>>>>>>> 6f9217984dbd613dacf66e148530e1bc4ef452ca
