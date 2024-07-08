@@ -1,5 +1,9 @@
 
-
+body, html
+{
+  margin: 0;
+  height: 100%;
+}
 
 body{
     font-family: Work Sans;
@@ -54,10 +58,12 @@ header > div > label > input
 
 .login
 {
-  background-color: black;
+  border: 1px solid black;
+  background-color: #932323;
   width: calc(5vw + 3vh);
   text-align: center;
   color: whitesmoke;
+  padding: 0;
 }
 
 .hoverable:hover
@@ -182,11 +188,12 @@ header > div > label > input
   margin: 5px 5px 5px 5px;
 
 }
-
-a {text-decoration: none}
-a:visited { text-decoration: none; color:white; }
-a:hover { text-decoration: none; color:blue; }
-a:focus { text-decoration: none; color:yellow; }
+header{
+  a {text-decoration: none}
+  a:visited { text-decoration: none; color:white; }
+  a:hover { text-decoration: none; color: #3a3a3a; }
+  a:focus { text-decoration: none; color:yellow; }
+}
 
 @media only screen and (max-width: 976px)
 {
@@ -205,4 +212,15 @@ a:focus { text-decoration: none; color:yellow; }
   }
 
   
+}
+
+main
+{
+    display: grid;
+    grid-row-start: 3;
+    grid-row-end: 9;
+    grid-column-start: 1;
+    grid-column-end: 11;
+
+    background-color: #292929;
 }
