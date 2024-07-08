@@ -188,6 +188,7 @@ header > div > label > input
   margin: 5px 5px 5px 5px;
 
 }
+
 header{
   a {text-decoration: none}
   a:visited { text-decoration: none; color:white; }
