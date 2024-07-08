@@ -1,3 +1,4 @@
+ /* general style */
 body, html
 {
     height: 100%;
@@ -5,6 +6,7 @@ body, html
     background-color: #292929;
 }
 
+  /* reuse style but main full cover */
 main
 {
     display: grid;
@@ -26,6 +28,7 @@ main > div > div
     background-color: #3a3a3a;
 }
 
+ /* other small classes */
 div > img
 {
     width: 100%;
@@ -35,16 +38,12 @@ div > img
 
 }
 
-img:hover
-{
-    scale: 110%;
-    border-color: red;
-}
 
 .together
 {
    justify-content: center;
 }
+
 
 h6
 {
@@ -63,7 +62,6 @@ p.flexText
     font-size: calc(1vw + 1vh);
     margin: 0 0 1% 0;
     height: auto;
- /*   border: 2px solid #888888; */
 }
 
 #description
@@ -77,6 +75,7 @@ h2 + h6 + p
     height: 60%;
 }
 
+/* table styling */
 th, td
 {
     font-size: calc(1vw + 0.5vh);
@@ -108,3 +107,10 @@ td
 {
     content: url("../imgs/avenger_endgame.jpg");
 }
+
+ /* img hover */
+ img:hover
+ {
+     scale: 110%;
+     border-color: red;
+ }

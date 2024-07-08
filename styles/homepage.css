@@ -1,3 +1,4 @@
+/* General body/html style */
 body, html
 {
   background-color: #888888;
@@ -6,6 +7,7 @@ body, html
   height: 100%;
 }
 
+/* define grid */
 .grid
 {
   margin: 0;
@@ -15,6 +17,9 @@ body, html
   grid-template-rows: auto auto auto auto auto auto auto auto auto auto ;
 }
 
+/* style header,main,aside,footer */
+
+/* HEADER */
 header
 {
 
@@ -48,6 +53,17 @@ header > div.container > *:not(:last-child)
   height: auto;
 }
 
+header > div
+{
+  width: 50%;
+}
+
+header > div > label > input
+{
+  margin: 15px;
+  height: calc(1.5vw + 1vh);
+}
+/* ASIDE */
 aside
 {
 
@@ -60,127 +76,6 @@ aside
  background-color: #3a3a3a;
 }
 
-main
-{
-
-  grid-row-start: 3;
-  grid-row-end: 9;
-  grid-column-start: 1;
-  grid-column-end: 8;
-
-  background-color: #292929;
-}
-
-#main
-{
-}
-
-footer
-{
-  grid-row-start: 9;
-  grid-row-end: 11;
-  grid-column-start: 1;
-  grid-column-end: 11;
-  height: 100%;
-
-  div
-  {
-    height: 100%;
-  background-color: rebeccapurple;
-  }
-}
-
-.container
-{
-
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-evenly;
-}
-
-.flex_col
-{
-  flex-direction: column;
-  width: auto;
-  height: 100%;
-}
-.flex_row
-{
-  flex-direction: row;
-  height: auto;
-  width: 100%;
-}
-
-.space_between
-{
-justify-content: space-between;
-}
-
-.flexstart
-{
-  justify-content: flex-start;
-}
-
-header > div
-{
-  width: 50%;
-}
-
-header > div > label > input
-{
-  margin: 15px;
-  height: calc(1.5vw + 1vh);
-}
-
-main > div.container
-{
- align-items: start;
-}
-main > div.container > div.container
-{
-  width: 80.8%;
-  height: 100%;
-}
-
-.box, .mainbox, .asidebox, .footerbox
-{
-  margin: 5px 5px 5px 5px;
-
-}
-
-.fillit
-{
-  width: 150px;
-  height: 150px;
-}
-
-.fillheight
-{
-  height: 100%;
-}
-
-.mainbox
-{
-  width: 300px;
-  height: 100px;
-}
-
-.mainbox>div:hover
-{
-  background-color: #3a3a3a;
-}
-.mainbox > div
-{
-  background-color: #888888;
-  height: 100%;
-  width: 100%;
-}
-.mainbox > div > p
-{
-  margin: 0;
-  text-align: center;
-}
 
 .asidebox
 {
@@ -221,13 +116,149 @@ aside > div > .asidebox:last-child
   height: 100%;
   width: 100%;
 }
+
+.asidebox > div
+{
+  background-image: url("../imgs/movies/deadpoolandwolverine/deadpoolandwolverine.jpg");
+  img {
+    object-fit: contain;
+  }
+}
+
+
+.asidebox>p
+{
+  text-overflow: fade;
+  overflow-wrap: break-word;
+  overflow-y: clip;
+
+}
+/* MAIN */
+main
+{
+
+  grid-row-start: 3;
+  grid-row-end: 9;
+  grid-column-start: 1;
+  grid-column-end: 8;
+
+  background-color: #292929;
+}
+
+main > div.container
+{
+  align-items: start;
+}
+main > div.container > div.container
+{
+  width: 80.8%;
+  height: 100%;
+}
+
+.mainbox
+{
+  width: 300px;
+  height: 100px;
+}
+
+.mainbox>div:hover
+{
+  background-color: #3a3a3a;
+}
+.mainbox > div
+{
+  background-color: #888888;
+  height: 100%;
+  width: 100%;
+}
+.mainbox > div > p
+{
+  margin: 0;
+  text-align: center;
+}
+
+
+div.mainbox > div > p
+{
+  display: inline-flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  font-size: calc(1vw + 1vh);
+  position: relative;
+  justify-content: space-between;
+  margin: 0 5% 0 0;
+}
+/* FOOTER */
+footer
+{
+  grid-row-start: 9;
+  grid-row-end: 11;
+  grid-column-start: 1;
+  grid-column-end: 11;
+  height: 100%;
+
+  div
+  {
+    height: 100%;
+  background-color: rebeccapurple;
+  }
+}
+
+
 .footerbox
 {
   height: 50px;
 }
 
-.footerbox > *
+/* define flexbox */
+.container
 {
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.flex_col
+{
+  flex-direction: column;
+  width: auto;
+  height: 100%;
+}
+.flex_row
+{
+  flex-direction: row;
+  height: auto;
+  width: 100%;
+}
+
+.space_between
+{
+justify-content: space-between;
+}
+
+.flexstart
+{
+  justify-content: flex-start;
+}
+
+.fillit
+{
+  width: 150px;
+  height: 150px;
+}
+
+.fillheight
+{
+  height: 100%;
+}
+
+/* define boxes for the tags*/
+.box, .mainbox, .asidebox, .footerbox
+{
+  margin: 5px 5px 5px 5px;
+
 }
 
 .boxbig
@@ -254,17 +285,6 @@ aside > div > .asidebox:last-child
   text-wrap: wrap;
   overflow-wrap: break-word;
 }
-/* hoverable */
-.hoverable:hover
-{
-  scale: 110%;
-}
-/* links */
-a {text-decoration: none}
-a:visited { text-decoration: none; color:white; }
-a:hover { text-decoration: none; color: #3a3a3a; }
-a:focus { text-decoration: none; color:yellow; }
-/* a:hover, a:active { text-decoration: none; color:black } */
 
 .center_div
 {
@@ -326,14 +346,28 @@ input:checked ~ label {
   width: 100%;
 }
 
-.asidebox>p
+.icon
 {
-  text-overflow: fade;
-  overflow-wrap: break-word;
-  overflow-y: clip;
-
+  margin: 0 5% 0 5%;
+  width: 20%;
+  height: auto;
+  float: left;
 }
-/* SHOW SELECTED SLIDE ONLY */
+
+/* hoverable class */
+.hoverable:hover
+{
+  scale: 110%;
+}
+
+/* links */
+a {text-decoration: none}
+a:visited { text-decoration: none; color:white; }
+a:hover { text-decoration: none; color: #3a3a3a; }
+a:focus { text-decoration: none; color:yellow; }
+
+/* Carousel */
+/* display selected slide */
 .slides input[type="radio"]
 {
   display: none;
@@ -350,7 +384,7 @@ input:checked ~ label {
   opacity: 1;
 }
 
-/* SLIDES WRAPPER & SHARED */
+/* slide wrapper */
 .slides, .slides > div{
   position: relative;
   height: inherit;
@@ -361,7 +395,6 @@ input:checked ~ label {
 }
 .slides  label, .slides p {
   color: #fff;
-/*  background: rgba(0, 0, 0, 0.7); */
 }
 
 .slides p
@@ -369,7 +402,7 @@ input:checked ~ label {
   background: rgba(0, 0, 0, 0.7);
 }
 
-/* SLIDE IMAGES */
+/* slide images */
 .slides > div img {
   top: 0;
   left: 0;
@@ -378,7 +411,7 @@ input:checked ~ label {
   object-fit: contain;
 }
 
-/* SLIDE CAPTION */
+/* slides p */
 .slides p {
   margin: 0;
   bottom: 0;
@@ -388,7 +421,7 @@ input:checked ~ label {
   font-size: 4vw;
 }
 
-/* LAST & NEXT BUTTONS */
+/* slides buttons */
 .slides label {
   top: 50%;
   transform: translateY(-50%);
@@ -405,6 +438,7 @@ input:checked ~ label {
 .slides label.next { right: 10px; }
 
 
+/* slide backgrounds */
 /* background of first slide */
 #slide1 + div > div
 {
@@ -421,32 +455,9 @@ input:checked ~ label {
   background-image: url("../imgs/movies/barbie/bg.jpg");
 }
 
-.asidebox > div
-{
-  background-image: url("../imgs/movies/deadpoolandwolverine/deadpoolandwolverine.jpg");
-  img {
-    object-fit: contain;
-  }
-}
 
-div.mainbox > div > p
-{
-  display: inline-flex;
-  align-items: center;
-  flex-wrap: nowrap;
-  font-size: calc(1vw + 1vh);
-  position: relative;
-  justify-content: space-between;
-  margin: 0 5% 0 0;
-}
 
-.icon
-{
-  margin: 0 5% 0 5%;
-  width: 20%;
-  height: auto;
-  float: left;
-}
+
 
 @media only screen and (max-width: 976px)
 {

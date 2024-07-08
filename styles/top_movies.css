@@ -1,3 +1,4 @@
+ /* general styling */
 body, html
 {
     height: 100%;
@@ -5,6 +6,7 @@ body, html
     background-color: #292929;
 }
 
+ /* reused grid but main full cover*/
 main
 {
     display: grid;
@@ -16,6 +18,7 @@ main
     background-color: #292929;
 }
 
+ /* small general classes */
 body > div
 {
     margin: 1%;
@@ -49,20 +52,64 @@ p.flexText {
     margin: 0 0 1% 0;
 }
 
-
-
 p>a
 {
     width: 100%;
     height: 100%;
 }
+
+ /* img hover */
 img:hover
 {
     scale: 110%;
     border-color: red;
 }
 
-@media only screen and (max-width: 976px)
-{
 
+/* Dropdown Button */
+.dropdown_button {
+    background-color: #888888;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    width: 100%;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    width: calc(10vw + 5vh);
+    margin-left: auto;
+}
+
+.dropdown_content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown_content p {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown_content p:hover
+{
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown_content
+{
+    display: block;
+}
+
+.dropdown:hover .dropdown_button
+{
+    background-color: #3a3a3a;
 }
