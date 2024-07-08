@@ -1,10 +1,11 @@
 /* General body/html style */
 body, html
 {
-  background-color: #888888;
+  background-color: rebeccapurple;
   color: whitesmoke;
   margin: 0;
   height: 100%;
+  font-family: work sans;
 }
 
 /* define grid */
@@ -128,6 +129,7 @@ aside > div > .asidebox:last-child
 
 .asidebox>p
 {
+  font-size: 110%;
   text-overflow: fade;
   overflow-wrap: break-word;
   overflow-y: clip;
@@ -183,7 +185,6 @@ div.mainbox > div > p
   display: inline-flex;
   align-items: center;
   flex-wrap: nowrap;
-  font-size: calc(1vw + 1vh);
   position: relative;
   justify-content: space-between;
   margin: 0 5% 0 0;
@@ -510,8 +511,4 @@ a:focus { text-decoration: none; color:yellow; }
     margin-right: auto;
   }
 
-  aside > div > .asidebox:last-child
-  {
-    text-align: justify;
-  }
 }

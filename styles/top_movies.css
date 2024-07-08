@@ -3,7 +3,8 @@ body, html
 {
     height: 100%;
     width: 100%;
-    background-color: #292929;
+    background-color: rebeccapurple;
+    font-family: work sans;
 }
 
  /* reused grid but main full cover*/

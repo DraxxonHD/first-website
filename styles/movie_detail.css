@@ -3,7 +3,9 @@ body, html
 {
     height: 100%;
     width: 100%;
-    background-color: #292929;
+    background-color: rebeccapurple;
+    font-family: work sans;
+
 }
 
   /* reuse style but main full cover */
